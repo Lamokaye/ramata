@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <!-- compte.html (Créer un compte) -->
+<div class="form-container">
+  <h2>Créer un compte</h2>
+  <p>Rejoignez Bookly en 30 secondes</p>
+  
+  <form action="register.php" method="POST">
+    <label>Nom complet</label>
+    <input type="text" name="nom" placeholder="Koffi Jean" required>
+    
+    <label>Numéro WhatsApp</label>
+    <input type="tel" name="telephone" placeholder="07 07 00 00 00" required>
+    
+    <label>Email</label>
+    <input type="email" name="email" placeholder="ex: koffi@gmail.com" required>
+    
+    <label>Mot de passe</label>
+    <input type="password" name="password" placeholder="Au moins 6 caractères" required>
+    
+    <label>Confirmer mot de passe</label>
+    <input type="password" name="confirm_password" required>
+    
+    <button type="submit" class="btn-bleu">Créer mon compte</button>
+    
+    <p class="bottom-text">Déjà un compte ? <a href="connexion.html">Se connecter</a></p>
+  </form>
+</div>
+</body>
+</html>

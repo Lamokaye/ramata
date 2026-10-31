@@ -1,0 +1,194 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookly - Librairie en ligne</title>
+        <link rel="stylesheet" href="junior.css">
+    </head>
+    <body>
+
+        <!-- HEADER / EN-TÊTE -->
+        <header>
+            <div class="logo-container">
+                <span class="logo-icon">📖</span>
+                <h1 class="logo-text">Bookly</h1>
+            </div>
+
+            <div id="barre-de-recherche">
+                <input 
+                    type="search" 
+                    class="champ-recherche" 
+                    placeholder="Rechercher un livre, auteur, ISBN..."
+                >
+            </div>
+
+            <div class="suite">
+                <p>♡ Favoris</p>
+                <p>🛒 Panier (0)</p>
+                <p><a href="compte.html"> Compte </a></p>
+                <a href="connexion.html"><button id="connecter">Se connecter</button></a>
+            </div>
+        </header>
+
+        <!-- BARRE DE CATÉGORIES -->
+        <nav id="categories">
+            <button class="categorie categorie-active">Toutes les catégories</button>
+            <button class="categorie">Romans</button>
+            <button class="categorie">Science-fiction</button>
+            <button class="categorie">Jeunesse</button>
+            <button class="categorie">Développement personnel</button>
+            <button class="categorie">Histoire</button>
+            <button class="categorie">Art</button>
+            <button class="categorie">BD & Manga</button>
+        </nav>
+
+        <main class="container">
+            <!-- BANNIÈRE PROMO -->
+            <section id="banniere-promo">
+                <div class="banniere-texte">
+                    <h2>Rentrée Littéraire 2026</h2>
+                    <p>Jusqu'à -20% sur notre sélection de livres pour la rentrée</p>
+                    <div class="banniere-boutons">
+                        <button class="btn-promo-main">Découvrir la sélection →</button>
+                        <button class="btn-promo-sub">Nouveautés</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 1 : POPULAIRES -->
+            <section class="section-produits">
+                <div class="titre-section">
+                    <h2>Populaires en ce moment</h2>
+                    <a href="#" class="voir-tout">Voir tout →</a>
+                </div>
+
+                <div class="grille-produits">
+                    <!-- Livre 1 -->
+    <div class="carte-produit" data-prix="18.40">
+        <span class="badge badge-promo">-20%</span>
+        <div class="couverture-livre" style="background: #1e293b;">
+            LES BRUMES D'AVALON
+        </div>
+        <h3 class="titre-produit">LES BRUMES D'AVALON</h3>
+        <p class="nom-auteur">Auteur : Marion Delaunay</p>
+        <p class="prix-produit">18,40 € / 12 000 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 2 -->
+    <div class="carte-produit" data-prix="22.00">
+        <div class="couverture-livre" style="background: #d97706;">
+            APPRENDRE À CODER
+        </div>
+        <h3 class="titre-produit">APPRENDRE À CODER</h3>
+        <p class="nom-auteur">Auteur : Kevin Moreau</p>
+        <p class="prix-produit">22,00 € / 14 500 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 3 -->
+    <div class="carte-produit" data-prix="25.50">
+        <div class="couverture-livre" style="background: #334155;">
+            HISTOIRE DE PARIS
+        </div>
+        <h3 class="titre-produit">HISTOIRE DE PARIS</h3>
+        <p class="nom-auteur">Auteur : Élise Bernard</p>
+        <p class="prix-produit">25,50 € / 16 700 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 4 -->
+    <div class="carte-produit" data-prix="16.90">
+        <span class="badge badge-nouveau">Nouveau</span>
+        <div class="couverture-livre" style="background: #e11d48;">
+            LE JARDIN SECRET
+        </div>
+        <h3 class="titre-produit">LE JARDIN SECRET</h3>
+        <p class="nom-auteur">Auteur : Clara Voisin</p>
+        <p class="prix-produit">16,90 € / 11 000 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 5 -->
+    <div class="carte-produit" data-prix="19.90">
+        <div class="couverture-livre" style="background: #0284c7;">
+            SPACE & TEMPS
+        </div>
+        <h3 class="titre-produit">SPACE & TEMPS</h3>
+        <p class="nom-auteur">Auteur : Lucas Rey</p>
+        <p class="prix-produit">19,90 € / 13 000 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 6 -->
+    <div class="carte-produit" data-prix="17.50">
+        <div class="couverture-livre" style="background: #64748b;">
+            MINDFUL & ZEN
+        </div>
+        <h3 class="titre-produit">MINDFUL & ZEN</h3>
+        <p class="nom-auteur">Auteur : Yuna Kim</p>
+        <p class="prix-produit">17,50 € / 11 500 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 7 -->
+    <div class="carte-produit" data-prix="20.00">
+        <span class="badge badge-bestseller">Bestseller</span>
+        <div class="couverture-livre" style="background: #991b1b;">
+            POLAR : LA NUIT SANS FIN
+        </div>
+        <h3 class="titre-produit">POLAR : LA NUIT SANS FIN</h3>
+        <p class="nom-auteur">Auteur : Thomas Lacroix</p>
+        <p class="prix-produit">20,00 € / 13 000 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+
+    <!-- Livre 8 -->
+    <div class="carte-produit" data-prix="24.00">
+        <div class="couverture-livre" style="background: #065f46;">
+            CUISINE VÉGÉTALE
+        </div>
+        <h3 class="titre-produit">CUISINE VÉGÉTALE</h3>
+        <p class="nom-auteur">Auteur : Anaïs Petit</p>
+        <p class="prix-produit">24,00 € / 15 500 FCFA</p>
+        <button class="bouton-panier">🛒 Ajouter au panier</button>
+    </div>
+    </div>
+            </section>
+        </main>
+
+        <!-- PIED DE PAGE -->
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-col">
+                    <h3>📖 Bookly</h3>
+                    <p>Votre librairie en ligne.<br>Romans, essais, jeunesse et plus.<br>Livraison gratuite dès 15 000 FCFA.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Catégories</h4>
+                    <p>Romans • Science-fiction • Jeunesse • Développement personnel • Histoire</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Aide</h4>
+                    <p>FAQ • Livraison & Retours • Contact • Mentions légales</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact & Réseaux</h4>
+                    <p>📍 Abidjan, Côte d'Ivoire</p>
+                    <p>📞 +225 01 73 52 19 72</p>
+                    <p>✉️ Kingleriche5@gmail.com</p>
+                </div>
+            </div>
+
+            <hr style="margin: 20px 0; border: none; border-top: 1px solid #e2e8f0;">
+
+            <p style="text-align: center; font-size: 13px; color: #64748b;">© 2026 Bookly - Tous droits réservés | Fait avec ❤️ à Abidjan|chef d'oeuvre LAMOKAYE</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
+        
